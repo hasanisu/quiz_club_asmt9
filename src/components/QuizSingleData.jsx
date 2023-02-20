@@ -1,9 +1,23 @@
 import React, { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const QuizSingleData = ({ qdata }) => {
     const { options, question, correctAnswer } = qdata;
+    console.log(options);
 
    const [data, setData] = useState();
+
+   let massgae;
+   
+   let value;
+   if(value === {correctAnswer}){
+        massgae = toast("Wow so easy!");
+   }
+   
+
+
+//    {correctAnswer ? alert('you are rigth'): <p>slectst</p>}
 
     return (
         <div>
@@ -11,21 +25,19 @@ const QuizSingleData = ({ qdata }) => {
             <h1>{data}</h1>
             <div>
 
-
-                <div>
-                    <input type="radio" name="one" value="0" onChange={e => setData(e.target.value)}/>{options[0]}
-                
-               
-                    <input type="radio" name="two" value="1" onChange={e => setData(e.target.value)} />{options[1]}
-                
-                
-                    <input type="radio" name="three" value="2" onChange={e => setData(e.target.value)}/>{options[2]}
-                
-                
-                    <input type="radio" name="four" value="3" onChange={e => setData(e.target.value)}/>{options[3]}
+                <div className=' bg-orange-600 w-6/12 mx-auto  rounded-md mb-11'>
+                    {
+                    options.map(option =>
+                    <div>
+                        <input type="radio" value={option} name="name" onChange={(e)=> setData(e.target.value(option === correctAnswer ? toast('added') : toast('wrong') ))} />
+                    <b>{option}</b>
+                    
+                    <ToastContainer />
+                    </div>
+                )}
+                    
                 </div>
-
-
+                
             </div>
         </div>
     );
