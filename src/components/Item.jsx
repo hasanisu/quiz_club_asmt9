@@ -6,19 +6,25 @@ const Item = ({ product }) => {
 
 
     return (
-        <div className="max-w-xs rounded-md shadow-md dark:bg-gray-900 dark:text-gray-100">
-            <img src={logo} alt="" className="object-cover object-center w-full rounded-t-md h-72 bg-slate-400" />
-            <div className="flex flex-col justify-between p-6 space-y-8">
-                <div className="space-y-2">
-                    <h2 className="text-3xl font-semibold tracking-wide">{name}</h2>
-                    <p className="dark:text-gray-100">Curabitur luctus erat nunc, sed ullamcorper erat vestibulum eget.</p>
-                </div>
-                <button type="button" className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-violet-400 text-gray-900 hover:bg-violet-600">
-                    <Link to={`/home/${id}`}>Quiz Test</Link>
-                    
-                </button>
-            </div>
-        </div>
+<div className=" container p-4 py-4 py-2 bg-violet-400 lg:w-8/12 hover:w-9/12 duration-500 ease-in lg:ml-36 text-gray-900 mb-6 rounded-md">
+			<div className="">
+				<div className="flex flex-col lg:flex-row items-center justify-between">
+					<img className="text-center md:h-48 bg-zinc-500 rounded-md" src={logo} alt="" />
+
+
+					<div className="space-x-2 text-center py-2 lg:py-0">
+
+						<span className="font-bold text-lg">Topic Name: {name}</span>
+
+					</div>
+					<Link to={`/home/${id}`} rel="noreferrer noopener" className="px-5 mt-4 lg:mt-0 py-3 w-56 rounded-md border block bg-gray-50 text-gray-900 border-gray-400">Quiz Test</Link>
+				</div>
+			</div>
+		</div>
+
+
+
+       
     );
 };
 

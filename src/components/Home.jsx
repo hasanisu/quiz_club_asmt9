@@ -76,8 +76,8 @@ const Home = () => {
             </div>
 
 
-            <h2>Hi this is Home{products.length}</h2>
-            <div className='flex gap-10 ml-48'>
+            
+            <div className='gap-10 lg:ml-48 m-10 '>
                 {
                     products.map(product => <Item
                     key={product.id}
