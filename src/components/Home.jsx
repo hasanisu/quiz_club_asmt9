@@ -75,7 +75,7 @@ const Home = () => {
                 </div>
             </div>
 
-
+                
             
             <div className='gap-10 lg:ml-48 m-10 '>
                 {

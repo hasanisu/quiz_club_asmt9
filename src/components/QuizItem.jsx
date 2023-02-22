@@ -7,7 +7,7 @@ const QuizItem = () => {
     const quizData = quizItem.data.questions;
     console.log(quizData)
     return (
-        <div>
+        <div className='m-1'>
             {
                 quizData.map(qdata => <QuizSingleData
                 key={qdata.id}
