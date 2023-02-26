@@ -14,10 +14,10 @@ const Item = ({ product }) => {
 
 					<div className="space-x-2 text-center py-2 lg:py-0">
 
-						<span className="font-bold text-lg">Topic Name: {name}</span>
+						<span className="font-bold text-lg ">Topic Name: {name}</span>
 
 					</div>
-					<Link to={`/home/${id}`} rel="noreferrer noopener" className="px-5 mt-4 lg:mt-0 py-3 w-56 rounded-md border block bg-gray-50 text-gray-900 border-gray-400">Quiz Test</Link>
+					<Link to={`/home/${id}`} rel="noreferrer noopener" className="px-5 mt-4 lg:mt-0 py-3 w-56 rounded-md border block bg-gray-50 text-gray-900 bg-teal-400">Quiz Test</Link>
 				</div>
 			</div>
 		</div>

@@ -14,7 +14,7 @@ const Header = () => {
             className="inline-flex items-center"
           >
             <svg
-              className="w-8 text-teal-accent-400"
+              className="w-8 text-teal-400"
               viewBox="0 0 24 24"
               strokeLinejoin="round"
               strokeWidth="2"
@@ -29,7 +29,7 @@ const Header = () => {
               <rect x="14" y="11" width="7" height="12" />
             </svg>
             <span className="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
-              Company
+              Quiz Club
             </span>
           </Link>
           <ul className="flex items-center hidden space-x-8 lg:flex">
@@ -45,23 +45,23 @@ const Header = () => {
             </li>
             <li>
               <Link
-                to="/"
-                aria-label="Our product"
+                to="/statistic"
+                aria-label="statistic"
                 title="Our product"
                 className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
               >
-                Features
+                Statistic
               </Link>
             </li>
             <li>
-              <a
-                href="/"
-                aria-label="Product pricing"
-                title="Product pricing"
+              <Link
+                to="/blogs"
+                aria-label="Blogs"
+                title="Blogs"
                 className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
               >
-                Pricing
-              </a>
+                Blogs
+              </Link>
             </li>
             <li>
               <Link
@@ -73,16 +73,7 @@ const Header = () => {
                 About us
               </Link>
             </li>
-            <li>
-              <Link
-                to="/"
-                className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-                aria-label="Sign up"
-                title="Sign up"
-              >
-                Sign up
-              </Link>
-            </li>
+            
           </ul>
           <div className="lg:hidden">
             <button
@@ -133,7 +124,7 @@ const Header = () => {
                           <rect x="14" y="11" width="7" height="12" />
                         </svg>
                         <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                          Company
+                          Quiz Club
                         </span>
                       </Link>
                     </div>
@@ -167,27 +158,27 @@ const Header = () => {
                       </li>
                       <li>
                         <Link
-                          href="/"
-                          aria-label="Our product"
+                          to="/statistic"
+                          aria-label="statistic"
                           title="Our product"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
-                          Features
+                          Statistic
                         </Link>
                       </li>
                       <li>
                         <Link
-                          to="/"
-                          aria-label="Product pricing"
+                          to="/blogs"
+                          aria-label="Blogs"
                           title="Product pricing"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
-                          Pricing
+                          Blogs
                         </Link>
                       </li>
                       <li>
                         <Link
-                          to="/"
+                          to="/about"
                           aria-label="About us"
                           title="About us"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
@@ -195,16 +186,7 @@ const Header = () => {
                           About us
                         </Link>
                       </li>
-                      <li>
-                        <Link
-                          to="/"
-                          className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-                          aria-label="Sign up"
-                          title="Sign up"
-                        >
-                          Sign up
-                        </Link>
-                      </li>
+                    
                     </ul>
                   </nav>
                 </div>
